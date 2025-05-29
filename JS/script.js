@@ -4,15 +4,19 @@ const outputElem = document.getElementById('output');
 const formulaElem = document.getElementById('formula');
 const unitInputElem = document.getElementById('unit-input')
 const unitOutputElem = document.getElementById('unit-output')
+
+const textColorEffect = document.getElementsByClassName('text-color-effect');
+const borderColorEffect = document.getElementsByClassName('border-color-effect'); 
 //varibles
 let unitInputLastIndex = unitInputElem.selectedIndex
 let unitOutputLastIndex = unitOutputElem.selectedIndex
+let hexCode = [6,7,8,9,10]
 
 //process functions
 
 //unvalid input
 function wrongInput(){
-    inputElem.style.outline = '1px groove red'
+    // inputElem.style.outline = '1px groove red'
     outputElem.value = ''
     formulaElem.value = 'Error: Invalid input'
     formulaElem.style.fontFamily = "'Courier New', Courier, monospace"
@@ -34,6 +38,7 @@ function generateFormula(from, to, value, result){
         return `(${value}°C × 9/5) + 32 = ${result}°F;`
     }else if(from == '°F' && to == '°C'){
         return `(${value}°F - 32) × 5/9 = ${result}°C`
+        changeColor(value);
     }else if(from == to) {
         return result
     }
@@ -64,6 +69,7 @@ function swapValue(){
     inputElem.value = temp;
 }
 
+
 //event function
 function updateCalculator(){
     if(String(parseInt(inputElem.value)) == 'NaN'){
@@ -89,16 +95,20 @@ function swapPlace(e){
     updateCalculator();
 }
 function onReset(){
-
-}
-function onReverse(){
+    inputElem.value = '';
+    outputElem.value = '';
+    formulaElem.value = '';
+    unitInputElem.selectedIndex = 0;
+    unitOutputElem.selectedIndex = 1;
 
 }
 
 
 //runtime
-window.addEventListener('load', updateCalculator)
+// window.addEventListener('load', updateCalculator)
 inputElem.addEventListener('click', updateCalculator);
 inputElem.addEventListener('keyup', updateCalculator);
 unitInputElem.addEventListener('change', swapPlace);
-unitOutputElem.addEventListener('change', swapPlace)
+unitOutputElem.addEventListener('change', swapPlace);
+
+unitOutputElem.selectedIndex = 1;

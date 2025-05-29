@@ -28,15 +28,14 @@
             <!-- output -->
             <div>
                 <Label for="output">To </Label>
-                <select name="unit" id="unit-output" class="text-color-effect border-color-effect">
+                <select name="unit" id="unit-output"  class="text-color-effect border-color-effect">
                     <option value="&deg;C">&deg;C</option>
                     <option value="&deg;F">&deg;F</option>
                 </select>
                 <br>
                 <textarea name="output" id="output" readonly></textarea>
                 <!-- buttons -->    
-                <button type="button">reset</button>
-                <button type="button">reverse</button>
+                <button type="button" onclick="onReset()">reset</button>
             </div>
             
             <!-- formula -->
@@ -58,9 +57,15 @@
         <br>
         <label for="ftoc">From <span class="cursive-font">&deg;F</span> To <span class="cursive-font">&deg;C</span> </label>
         <textarea class="formula" name="ftoc" id="ftoc" value="">S&deg;F = (S&deg;F - 32) × 5/9</textarea>
+        <br>
+        <br>
+        <br>
+        <center><a style="color: #444;" href="https://ketcodestash.github.io/main/" target="_blank">more soon</a></center>
     </section>
-
+    <footer>
+        <center><div>@Abat-2025</div></center>
+    </footer>
     <script src="JS/script.js"></script>
-
+ 
 </body> 
 </html>
