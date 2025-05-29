@@ -1,41 +1,102 @@
+@media (max-aspect-ratio: 1/1) {
+    body{
+        /* display: grid; */
+        grid-template-rows: auto auto auto;
+        row-gap: 10px;
+        column-gap: 10px;
+        padding-right: 15px;
+        padding-left: 5px;
+        background-color: blue;
+        /* font-family: 'Courier New', Courier, monospace; */
+    }
+}    
+/* web styleling */
 body{
     display: grid;;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
     row-gap: 10px;
     column-gap: 10px;
-    padding-right: 20px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 5px;
     background-color: #222;
     font-family: 'Courier New', Courier, monospace;
+}
+.main-style{
+    background-color: #111;
+    color: white;
+    border: 5px outset;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+.cursive-font{
+    font-family: cursive;
+}
+.text-color-effect{
+    color: #55f;
+}
+.border-color-effect{
+    border-color:  #55f;
 }
 h1{
     text-align: center;
 }
-section{
-    padding: 20px;
-    padding-top: 40px;
+.center{
+    text-align: center;
 }
+/* content base */
 header{
     grid-column-start: 1;
     grid-column-end: 3;
     text-align: center;
     padding: 20px;
 }
-#main-style{
-    background-color: black;
-    color: white;
-    opacity: 0.8;
-    border-radius: 20px;
+section{
+    padding: 20px;
+    padding-top: 40px;
 }
 
 
-.calculator-container{
+/* calculator layouting */
+.calculator-container{ 
     display: grid;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: 150px 220px auto;
     height: 80%;
+    
+}
+select{
+    width: 40px;
+    height: 25px;
+    font-size: 12px;
+    border-radius: 15px;
+    background-color: #111;
 }
 textarea{
     width: 98%;
-    height: 65px;
+    height: 100px;
+    border: 4px outset;
+    border-radius: 10px;
+    background-color: #222;
+    color: white;
+}
+
+/* output */
+#output{
+    outline: 0px;
+}
+.formula{
+    font-family: cursive;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px; 
+    outline: 0px;
+    font-size: 22px;
+}
+#formula{
+    font-family: cursive;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px; 
+    outline: 0px;
+    font-size: 22px;
 }

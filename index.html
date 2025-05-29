@@ -8,17 +8,17 @@
 </head>
 <body>
     <!-- judul -->
-    <header id="main-style">
-        <h1>Tempature calculator</h1>
-        <p>This website is used to calculate and convert one unit to another</p>
+    <header class="main-style border-color-effect">
+        <h1><span class="text-color-effect">Tempature</span> Calculator</h1>
+        <p>This website can be use to convert tempature unit</p>
     </header>
     <!-- Kalkulator -->
-    <section  id="main-style">
-        <form action="" class="calculator-container">
+    <section  class="main-style border-color-effect">
+        <form class="calculator-container">
             <!-- input -->
             <div>
-                <Label for="input">convert from </Label>
-                <select name="unit" id="unit">
+                <Label for="input"> Convert from </Label>
+                <select name="unit" id="unit-input"  class="text-color-effect border-color-effect">
                     <option value="&deg;C">&deg;C</option>
                     <option value="&deg;F">&deg;F</option>
                 </select>
@@ -28,79 +28,39 @@
             <!-- output -->
             <div>
                 <Label for="output">To </Label>
-                <select name="unit" id="unit">
+                <select name="unit" id="unit-output" class="text-color-effect border-color-effect">
                     <option value="&deg;C">&deg;C</option>
                     <option value="&deg;F">&deg;F</option>
                 </select>
                 <br>
-                <textarea name="output" id="output"></textarea>    
-                <button>reset</button>
-                <button>reverse</button>
+                <textarea name="output" id="output" readonly></textarea>
+                <!-- buttons -->    
+                <button type="button">reset</button>
+                <button type="button">reverse</button>
             </div>
-            <!-- buttons -->
+            
             <!-- formula -->
             <div>
                 <label for="formula">Formula</label>
-                <textarea name="formula" id="formula" readonly></textarea>
+                <textarea name="formula" id="formula"    ></textarea>
             </div>
         </form> 
     </section>
         
-    <section id="main-style">
-        <h1>How?</h1>
-        <p>
-            There's a diffrent to calculate each one of this tempature
-           
+    <section class="main-style border-color-effect">
+        <h1>Formula</h1>
+        <p class="center">
+            This is how all tempature unit get calculated 
         </p>
         <br>
-        <p> exmaple
-            awldkajdwkhawd
-            awldkajdwkhawdaw
-        </p>
+        <label for="ctof">From <span class="cursive-font">&deg;C</span> To <span class="cursive-font">&deg;F</span> </label>
+        <textarea class="formula" name="ctof" id="ctof" value="">S&deg;F = (S&deg;C × 9/5) &plus; 32 </textarea>
         <br>
-        <p>
-            awidjawjdl
-            aklwdj
-            iadwjlakwdjlkadj
-        </p>
-        <br>
-        <p>
-            awidjawjdl
-            aklwdj
-            iadwjlakwdjlkadj
-        </p>
-        <br>
-        <p>
-            awidjawjdl
-            aklwdj
-            iadwjlakwdjlkadj
-        </p>
-        <br>
-        <p>
-            awidjawjdl
-            aklwdj
-            iadwjlakwdjlkadj
-        </p>
-        <br>
-        <p>
-            awidjawjdl
-            aklwdj
-            iadwjlakwdjlkadj
-        </p>
-        <br>
-        <p>
-            awidjawjdl
-            aklwdj
-            iadwjlakwdjlkadj
-        </p>
-        <br>
-        <p>
-            awidjawjdl
-            aklwdj
-            iadwjlakwdjlkadj
-        </p>
+        <label for="ftoc">From <span class="cursive-font">&deg;F</span> To <span class="cursive-font">&deg;C</span> </label>
+        <textarea class="formula" name="ftoc" id="ftoc" value="">S&deg;F = (S&deg;F - 32) × 5/9</textarea>
     </section>
 
+    <script src="JS/script.js"></script>
 
 </body> 
 </html>
