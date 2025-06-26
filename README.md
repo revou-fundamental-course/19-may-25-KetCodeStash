@@ -11,4 +11,4 @@
 <p>Thank you to RevoU team for all the knowledge and experience that they have given.</p>
 <p>I wish for everyones success in this program and Hope RevoU can teach and inspire more dedicated developer out there. :)</p>
 
-<p>This project will be updated and included in my portofolio git page at </p>   
+<p>This project will be updated and included in my portofolio git page <a href='https://ketcodestash.github.io/main/'>here</a></p>   
