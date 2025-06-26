@@ -7,7 +7,7 @@
   <li>Learn how to make a dynamic website with JavaScript</li>
   <li>Learn basic desain with CSS</li>
 </list>
-
+<br>
 <p>Thank you to RevoU team for all the knowledge and experience that they have given.</p>
 <p>I wish for everyones success in this program and Hope RevoU can teach and inspire more dedicated developer out there. :)</p>
 
